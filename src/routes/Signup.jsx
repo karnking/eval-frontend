@@ -11,7 +11,7 @@ const Signup = () => {
     const signup = async(obj) =>{
         await axios.post(process.env.REACT_APP_API_URL+'signup',obj)
         // setMessage(tmp)
-        console.log(tmp)
+        // console.log(tmp)
     }
     const handleSubmit = (e) => {
         e.preventDefault()
