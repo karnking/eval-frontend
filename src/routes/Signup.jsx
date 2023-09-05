@@ -7,6 +7,7 @@ const Signup = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [message,setMessage] = useState('')
+    console.log(process.env.REACT_APP_API_URL)
     const signup = async(obj) =>{
         await axios.post(process.env.REACT_APP_API_URL+'signup',obj)
         // setMessage(tmp)
